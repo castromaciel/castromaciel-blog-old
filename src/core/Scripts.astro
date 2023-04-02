@@ -1,13 +1,15 @@
 <script type="module" is:inline>
   
   window.onload = () => {
+    const theme = localStorage.getItem('theme') || 'dark';
+
 		if (theme === 'light') {
-      document.documentElement.setAttribute('data-theme', 'dark')
-      localStorage.setItem('theme', 'dark')
+      document.documentElement.setAttribute('data-theme', 'light')
+      localStorage.setItem('theme', 'light')
       return
     }
-    document.documentElement.setAttribute('data-theme', 'light')
-    localStorage.setItem('theme', 'light')
+    document.documentElement.setAttribute('data-theme', 'dark')
+    localStorage.setItem('theme', 'dark')
 	}
 
 </script>
