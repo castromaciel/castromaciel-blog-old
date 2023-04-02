@@ -1,5 +1,7 @@
 ---
+import Themes from 'astro-themes';
 import MetaTags from "~/core/MetaTags.astro";
+import Scripts from '~/core/Scripts.astro';
 import SocialLinks from "~/partials/widgets/SocialLinks.astro";
 import '~/styles/layout.scss';
 
@@ -9,14 +11,15 @@ const meta = Astro.props;
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <MetaTags {...meta}/>
+    <Themes />
+    <MetaTags {...meta} />
   </head>
   <body>
 
     <slot />
 
     <SocialLinks />
-
+    <Scripts />
   </body>
 </html>
 
