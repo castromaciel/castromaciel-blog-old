@@ -1,0 +1,20 @@
+---
+import ListElement from "~/components/ListElement.astro";
+import { PROJECT_LINKS } from "~/constants";
+
+---
+
+<section>
+  <h1>My work</h1>
+  <h2>Projects</h2>
+  <ul>
+    <p>Open the url to see the projects:</p>
+    {
+      PROJECT_LINKS.map((project) => (
+        <ListElement
+          {...project}
+        />
+      ))
+    }
+  </ul>
+</section>
