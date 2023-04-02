@@ -1,0 +1,28 @@
+---
+import WIPBadge from './WIPBadge.astro'
+
+interface Props {
+  externalUrl: string
+  projectTitle: string
+  description: string
+  isFinished: boolean
+}
+
+const {
+  externalUrl, projectTitle, description, isFinished
+} = Astro.props
+---
+<li>
+  <a href={externalUrl} target="_blank" rel="noreferrer">
+    {projectTitle}
+    :
+  </a>
+  {' '}
+  {description}
+  { !isFinished && (
+    <>
+      {' '}
+      <WIPBadge />
+    </>
+  )}
+</li>
