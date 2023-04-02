@@ -1,4 +1,4 @@
-# [castromaciel-blog.com](https://castromaciel-blog.vercel.app)
+# [castromaciel-blog.com](https://castromaciel-blog.netlify.app)
 
 > My personal blog and website.
 
