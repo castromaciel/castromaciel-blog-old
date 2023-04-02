@@ -1,0 +1,28 @@
+---
+import TextLink from "~/components/TextLink.astro";
+import { navItems } from "~/constants";
+
+const { pathname } = Astro.url;
+---
+<nav>
+  <ul>
+    {
+      navItems.map(({ label, path }) => (
+        <li>
+          <a href={path} title={label}>
+            {
+              pathname === path
+              ? <TextLink label={label}/>
+              : label
+            }
+          </a>
+        </li>
+      ))
+    }
+    <li>
+      <a href="/static/CastroMaciel_en_cv.pdf">
+        resume
+      </a>
+    </li>
+  </ul>
+</nav>
