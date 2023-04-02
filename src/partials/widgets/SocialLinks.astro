@@ -1,0 +1,31 @@
+---
+import { ChangeTheme } from "../integrations";
+
+export const SOCIAL_LINKS = [
+  {
+    label: 'github',
+    path: 'https://github.com/castromaciel'
+  },
+  {
+    label: 'linkedIn',
+    path: 'https://www.linkedin.com/in/castromaciel-00/'
+  }
+]
+---
+<footer>
+  <nav>
+    <ChangeTheme client:load/>
+  </nav>
+  <nav>
+    Social Links:
+    <ul>
+      {
+        SOCIAL_LINKS.map(({ label, path }) => (
+          <li>
+            <a href={path} target="_blank" rel="noreferrer">{label}</a>
+          </li>
+        ))
+      }
+    </ul>
+  </nav>
+</footer>
