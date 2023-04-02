@@ -36,11 +36,11 @@ button {
   all: unset;
   background: transparent !important;
   cursor: pointer;
+}
 
-  &:hover {
-    cursor: pointer;
-    color: var(--color-button-hover)
-  }
+button:hover {
+  cursor: pointer;
+  color: var(--color-button-hover)
 }
 
 @media(prefers-color-scheme: dark) {
@@ -62,10 +62,10 @@ button {
     all: unset;
     background: transparent !important;
     cursor: pointer;
-  
-    &:hover {
-      cursor: pointer;
-      color: var(--color-button-hover)
-    }
+  }
+
+  button:hover {
+    cursor: pointer;
+    color: var(--color-button-hover)
   }
 }
