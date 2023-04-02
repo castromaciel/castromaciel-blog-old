@@ -1,5 +1,6 @@
 ---
 import MetaTags from "~/core/MetaTags.astro";
+import Navbar from "~/partials/widgets/Navbar.astro";
 import SocialLinks from "~/partials/widgets/SocialLinks.astro";
 import '~/styles/layout.scss';
 
@@ -12,6 +13,8 @@ const meta = Astro.props;
     <MetaTags {...meta}/>
   </head>
   <body>
+    
+    <Navbar />
 
     <slot />
 
