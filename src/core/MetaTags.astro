@@ -1,0 +1,44 @@
+---
+import { SEO } from "astro-seo";
+import { SITE } from "~/config.mjs";
+import { getUTCDate } from "~/utils/getUTCdate";
+
+const {
+	title = SITE.title,
+	description = '',
+	noindex = false,
+	nofollow = false,
+  ogTitle = title,
+  ogType = 'website'
+} = Astro.props;
+---
+
+
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="Castro Maciel Leandro">
+<meta name="x-build-time" content={getUTCDate()}>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/yegor256/tacit@gh-pages/tacit-css-1.5.5.min.css"/>
+
+<SEO
+  title={title}
+  description={description}
+  noindex={noindex}
+  nofollow={nofollow}
+  openGraph={{
+    basic: {
+      title: ogTitle,
+      type: ogType,
+      image: "https://avatars.githubusercontent.com/u/83432755?v=48d.png",
+      url: SITE.origin
+    },
+    optional: {
+      description
+    }
+  }}
+  extend={{
+    link: [{ rel: "icon", href: "/favicon.svg" }],
+  }}
+/>
