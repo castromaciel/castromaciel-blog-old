@@ -1,0 +1,25 @@
+:root {
+  --font-color: #24292f;
+  --bg-color:#ffffff;
+  --link-color:#275a90;
+  --color-button-hover: #36373a;
+  
+}
+
+[data-theme="dark"] {
+  --font-color: #ffffff;
+  --bg-color:#0e1117;
+  --link-color:#7352ff;
+  --color-button-hover: #e5e5e5;
+}
+
+* {
+  font-family: 'IBM Plex Serif', serif;
+}
+
+// google fonts
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&display=swap');
+
+// base
+@import url('./base/_reset.scss');
