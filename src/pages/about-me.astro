@@ -1,0 +1,14 @@
+---
+import { SITE } from "~/config.mjs";
+import PagesLayout from "~/layouts/PagesLayout.astro";
+import About from "~/partials/About.astro";
+
+const meta = { 
+  title: 'About me - Castro Maciel',
+  description: SITE.description
+}
+---
+
+<PagesLayout {...meta}>
+  <About />
+</PagesLayout>
