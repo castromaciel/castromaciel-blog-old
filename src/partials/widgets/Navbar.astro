@@ -1,5 +1,5 @@
 ---
-import TextLink from "~/components/TextLink.astro";
+import ActiveLink from "~/components/ActiveLink.astro";
 import { navItems } from "~/constants";
 
 const { pathname } = Astro.url;
@@ -12,7 +12,7 @@ const { pathname } = Astro.url;
           <a href={path} title={label}>
             {
               pathname === path
-              ? <TextLink label={label}/>
+              ? <ActiveLink label={label}/>
               : label
             }
           </a>
