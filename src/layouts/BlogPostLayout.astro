@@ -1,0 +1,42 @@
+---
+import BaseLayout from "./BaseLayout.astro";
+import type { BlogPorperties } from "./interfaces";
+
+interface Props {
+  frontmatter: BlogPorperties
+}
+
+const {
+  frontmatter,
+} = Astro.props
+
+const { 
+  title, author, images: { src, alt, description }, date, category
+} = frontmatter
+
+const meta = { 
+  title: `${title} - ${author}`,
+}
+---
+
+<BaseLayout {...meta}>
+  <section>
+    <div>
+      <img src={src} alt={alt}>
+      <small>{description}</small> 
+    </div>
+    
+    <slot />
+
+    <small>
+      <p>
+        Publication date: { date }
+        <br>
+        Author: { author }  
+      </p>
+    </small>
+
+    <a href="/blogs">Go to posts</a>
+
+  </section>
+</BaseLayout>
