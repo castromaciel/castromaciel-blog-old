@@ -1,4 +1,5 @@
 ---
+import { formatDate } from "~/utils/formatDate";
 import BaseLayout from "./BaseLayout.astro";
 import type { BlogPorperties } from "./interfaces";
 
@@ -22,7 +23,7 @@ const meta = {
 <BaseLayout {...meta}>
   <section>
     <div>
-      <img src={src} alt={alt}>
+      <img src={src} alt={alt} />
       <small>{description}</small> 
     </div>
     
@@ -30,7 +31,7 @@ const meta = {
 
     <small>
       <p>
-        Publication date: { date }
+        Publication date: { formatDate(date) }
         <br>
         Author: { author }  
       </p>
@@ -40,3 +41,17 @@ const meta = {
 
   </section>
 </BaseLayout>
+
+<style is:global>
+  @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+  
+  pre {
+    padding: 1rem 0rem 1rem 1rem;
+    border-radius: 8px;
+  }
+
+  code,
+  code span {
+    font: 0.9rem 'Roboto', sans-serif;
+  }
+</style>
