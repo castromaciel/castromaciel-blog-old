@@ -9,7 +9,8 @@ const {
 	noindex = false,
 	nofollow = false,
   ogTitle = title,
-  ogType = 'website'
+  ogType = 'website',
+  ogImage = 'https://avatars.githubusercontent.com/u/83432755?v=48d.png'
 } = Astro.props;
 ---
 
@@ -31,7 +32,7 @@ const {
     basic: {
       title: ogTitle,
       type: ogType,
-      image: "https://avatars.githubusercontent.com/u/83432755?v=48d.png",
+      image: ogImage,
       url: SITE.origin
     },
     optional: {
