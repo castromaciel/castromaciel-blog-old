@@ -21,6 +21,17 @@ export const navItems = [
   }
 ]
 
+export const SOCIAL_LINKS = [
+  {
+    label: 'github',
+    path: 'https://github.com/castromaciel'
+  },
+  {
+    label: 'linkedIn',
+    path: 'https://www.linkedin.com/in/castromaciel-00/'
+  }
+]
+
 export const PROJECT_LINKS = [
   {
     description: 'Is a project to simplify the process of creating a new project. It&apos;s contains Eslint, tests with jest and react testing library, MIT License.',
@@ -42,7 +53,7 @@ export const PROJECT_LINKS = [
   },
   {
     description: 'Is a set of UI components for React.',
-    externalUrl: 'https://github.com/castromaciel/ui-rollingcod',
+    externalUrl: 'https://github.com/castromaciel/ui-rollingcode',
     isFinished: false,
     projectTitle: 'ui-rc-components'
   },
