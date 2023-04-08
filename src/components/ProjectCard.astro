@@ -1,0 +1,59 @@
+---
+interface Props {
+  title: string,
+  linkDemo: string,
+  description: string,
+  repositoryUrl: string,
+  techs: string[]
+}
+
+const {
+  title = "title",
+  linkDemo = "https://github.com/",
+  description = "description",
+  repositoryUrl= "https://github.com/",
+  techs = ['React', 'Vite', 'sass']
+} = Astro.props
+---
+
+<li>
+  <h4>
+    <a href={linkDemo} target="_blank" title={`Open ${title} at new window`} class="custom-link">
+      {title}
+    </a>
+  </h4>
+  <p>{description}</p>
+
+  <div class="tech-container">
+    { techs.map((tech: string) => (
+      <Fragment>
+        <small> {tech}</small>
+        <b class="marker"> • </b>
+      </Fragment>
+    ))}
+    <a href={repositoryUrl} target="_blank" title={`Open ${title} repository at new window`} class="custom-link">
+      <small> gh repository </small> 
+    </a>
+  </div>
+  <hr>
+</li>
+
+<style lang="scss">
+  .marker {
+    color: var(--link-color);
+  }
+
+  .custom-link {
+    color: var(--font-color);
+
+    &:hover {
+      color: var(--link-color);
+    }
+  }
+
+  .tech-container {
+    display: flex;
+    align-items: center;
+    gap: .25rem;
+  }
+</style>
