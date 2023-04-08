@@ -1,0 +1,33 @@
+---
+import PostLink from "~/components/PostLink.astro";
+import PagesLayout from "~/layouts/PagesLayout.astro";
+
+const allPosts = await Astro.glob('./*.md')
+
+const meta = {
+  title: 'Blogs - Castro Maciel',
+  description: 'Here i&apos;ve wrote about me, it world and other interesting things..'
+}
+---
+
+<PagesLayout {...meta}>
+  <section>
+
+    <h1>Blog Posts</h1>
+    <p>Here i&apos;ve wrote about me, it world and other interesting things..</p>
+    <ul>
+      {
+        allPosts.map((post) => (<PostLink frontmatter={post.frontmatter}/>))
+      }
+    </ul>
+    <hr>
+  </section>
+</PagesLayout>
+
+<style lang="scss">
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+</style>
