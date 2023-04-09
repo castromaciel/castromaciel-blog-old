@@ -1,3 +1,4 @@
+import sitemap from "@astrojs/sitemap";
 import { defineConfig } from 'astro/config';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -10,8 +11,8 @@ export default defineConfig({
     shikiConfig: {
       theme: 'dracula',
       langs: [],
-      wrap: true,
-    },
+      wrap: true
+    }
   },
   site: SITE.origin,
   srcDir: './src',
@@ -22,5 +23,5 @@ export default defineConfig({
       }
     }
   },
-  integrations: []
+  integrations: [sitemap()]
 });
