@@ -1,5 +1,5 @@
 ---
-import ListElement from "~/components/ListElement.astro";
+import ProjectCard from "~/components/ProjectCard.astro";
 import { PROJECT_LINKS } from "~/constants";
 
 ---
@@ -11,9 +11,7 @@ import { PROJECT_LINKS } from "~/constants";
     <p>Open the url to see the projects:</p>
     {
       PROJECT_LINKS.map((project) => (
-        <ListElement
-          {...project}
-        />
+        <ProjectCard {...project} />
       ))
     }
   </ul>
