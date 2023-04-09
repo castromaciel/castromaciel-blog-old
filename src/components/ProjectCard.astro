@@ -16,12 +16,12 @@ const {
 } = Astro.props
 ---
 
-<li>
-  <h4>
+<div>
+  <h3>
     <a href={linkDemo} target="_blank" title={`Open ${title} at new window`} class="custom-link">
       {title}
     </a>
-  </h4>
+  </h3>
   <p>{description}</p>
 
   <div class="tech-container">
@@ -36,7 +36,7 @@ const {
     </a>
   </div>
   <hr>
-</li>
+</div>
 
 <style lang="scss">
   .marker {
