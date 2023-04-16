@@ -1,8 +1,25 @@
 ---
-const { frontmatter } = Astro.props
-const { url, title } = frontmatter
+import { Icon } from "~/partials/widgets/icons";
+
+const { url, title, type } = Astro.props
 ---
 
 <li>
-  <a href={url}>{title}</a>
+  <a href={url} class="custom-link">
+    <Icon type={type} client:load/>
+    <span>{title}</span>
+  </a>
 </li>
+
+<style lang="scss">
+  .custom-link {
+    color: var(--font-color);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+
+    &:hover {
+      color: var(--link-color);
+    }
+  }
+</style>
