@@ -1,6 +1,7 @@
 ---
 import ActiveLink from "~/components/ActiveLink.astro";
 import { navItems } from "~/constants";
+import { isActivePath } from "~/utils/isActivePath";
 
 const { pathname } = Astro.url;
 ---
@@ -8,11 +9,11 @@ const { pathname } = Astro.url;
   <ul>
     {
       navItems.map(({ label, path }) => (
-        <li>
+        <li id={label}>
           <a href={path} title={label}>
             {
-              pathname === path
-              ? <ActiveLink label={label}/>
+              isActivePath(pathname, path)
+              ? <ActiveLink label={label} />
               : label
             }
           </a>
