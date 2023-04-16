@@ -1,3 +1,4 @@
+import react from '@astrojs/react';
 import sitemap from "@astrojs/sitemap";
 import { defineConfig } from 'astro/config';
 import path from 'node:path';
@@ -23,5 +24,7 @@ export default defineConfig({
       }
     }
   },
-  integrations: [sitemap()]
+  integrations: [
+    sitemap(),
+    react()]
 });
