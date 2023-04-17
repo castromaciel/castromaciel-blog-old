@@ -1,7 +1,7 @@
 ---
 import ActiveLink from "~/components/ActiveLink.astro";
 import { navItems } from "~/constants";
-import { isActivePath } from "~/utils/isActivePath";
+import { isActivePath } from "~/utils";
 
 const { pathname } = Astro.url;
 ---
@@ -21,7 +21,7 @@ const { pathname } = Astro.url;
       ))
     }
     <li>
-      <a href="/static/CastroMaciel_en_cv.pdf">
+      <a href="/static/CastroMaciel_en_cv.pdf" target="_blank">
         resume
       </a>
     </li>
