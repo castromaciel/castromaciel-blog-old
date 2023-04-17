@@ -1,6 +1,7 @@
 ---
 import type { GetStaticPaths } from "astro"
 import { CollectionEntry,getCollection } from "astro:content"
+import InfoCard from "~/components/InfoCard.astro"
 import BaseLayout from "~/layouts/BaseLayout.astro"
 import { Icon } from "~/partials/widgets/icons"
 
@@ -19,15 +20,15 @@ export const getStaticPaths = (async () => {
 }) satisfies GetStaticPaths
 
 const { entry } = Astro.props
-const { createdAt, lang, title, updatedAt, images, author } = entry.data
+const { lang, title, images } = entry.data
 
 const { Content } = await entry.render()
 
 const meta = {
+  lang,
   title: `${title} - Castro Maciel`,
   description: 'Here i&apos;ve wrote about a bit of all. Like blog posts, design patterns, maths, notes of university, etc..'
 }
-
 ---
 
 <BaseLayout {...meta}>
@@ -41,6 +42,8 @@ const meta = {
     )}
 
     <Content />
+
+    <InfoCard {...entry.data} />
 
     <a href='../' class="back-link">
       <Icon type="back" client:load />

@@ -1,0 +1,41 @@
+---
+interface Props {
+  createdAt: string
+  lang: string
+  updatedAt?: string
+  author: string
+}
+
+const { createdAt, lang, updatedAt, author } = Astro.props
+
+---
+<div class="info-card">
+  <hr/>
+  {
+    lang === "es" 
+      ? (<Fragment>
+          { createdAt && <span>Fecha de creación: {createdAt}</span> }
+          { updatedAt && <span>Fecha de actualización {updatedAt}</span> }
+          { author && <span>Autor: {author}</span> }
+        </Fragment>)
+      : (<Fragment>
+          { createdAt && <span>Creation date: {createdAt}</span> }
+          { updatedAt && <span>Updated date: {updatedAt}</span> }
+          { author && <span>Author: {author}</span> }
+        </Fragment>)
+  }
+</div>
+
+<style lang="scss">
+
+  .info-card {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0;
+
+    hr {
+      margin: 0;
+    }
+
+  }
+</style>
