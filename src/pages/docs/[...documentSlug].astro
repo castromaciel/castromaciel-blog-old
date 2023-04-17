@@ -25,7 +25,7 @@ const { Content } = await entry.render()
 
 const meta = {
   title: `${title} - Castro Maciel`,
-  description: 'Here i&apos;ve wrote about me, it world and other interesting things..'
+  description: 'Here i&apos;ve wrote about a bit of all. Like blog posts, design patterns, maths, notes of university, etc..'
 }
 
 ---
@@ -41,12 +41,12 @@ const meta = {
     )}
 
     <Content />
-    
+
     <a href='../' class="back-link">
       <Icon type="back" client:load />
       <span>go back</span>
     </a>
-  </section>
+    </section>
 </BaseLayout>
 
 
@@ -57,16 +57,30 @@ const meta = {
     padding: 1rem 0rem 1rem 1rem;
     border-radius: 8px;
   }
+  pre code {
+    line-height: 1.45;
+  }
 
   code,
   code span {
-    font: 0.9rem 'Roboto', sans-serif;
+    font-family: ui-monospace,SFMono-Regular,SF Mono,Menlo,Consolas,Liberation Mono,monospace;
+    font-size: 0.9rem;
+    line-height: 1.45;
   }
 
   .back-link {
     display: flex;
     align-items: center;
     gap: 0.5rem;
+  }
+
+  .inline-code {
+    background: hsla(261, 40%, 21%, 1);
+    color: var(--text-color);
+  }
+
+  h3 .inline-code {
+    font-size: 1.35rem;
   }
 
 </style>

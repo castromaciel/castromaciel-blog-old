@@ -3,7 +3,7 @@ import type { GetStaticPathsItem } from "astro";
 import { getCollection } from "astro:content";
 import { z } from "zod";
 import PostLink from '~/components/PostLink.astro';
-import PagesLayout from '~/layouts/PagesLayout.astro';
+import BaseLayout from '~/layouts/BaseLayout.astro';
 
 const meta = {
   title: 'Docs - Castro Maciel',
@@ -86,7 +86,7 @@ if (Astro.params.folderSlug !== undefined) {
 }
 ---
 
-<PagesLayout {...meta}>
+<BaseLayout {...meta}>
   <section>
 
     <h1>Documents</h1>
@@ -100,7 +100,7 @@ if (Astro.params.folderSlug !== undefined) {
       </ul>
     <hr>
   </section>
-</PagesLayout>
+</BaseLayout>
 
 <style lang="scss">
   ul {
