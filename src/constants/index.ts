@@ -12,8 +12,8 @@ export const navItems = [
     path: '/my-work/'
   },
   {
-    label: 'blogs',
-    path: '/blogs/'
+    label: 'docs',
+    path: '/docs/'
   },
   {
     label: 'contact',

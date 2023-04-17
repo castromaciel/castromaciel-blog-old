@@ -1,18 +1,21 @@
 ---
 import Themes from 'astro-themes';
-import MetaTags from "~/core/MetaTags.astro";
+import MetaTags from '~/core/MetaTags.astro';
 import Scripts from '~/core/Scripts.astro';
-import SocialLinks from "~/partials/widgets/SocialLinks.astro";
+import SocialLinks from '~/partials/widgets/SocialLinks.astro';
 import '~/styles/layout.scss';
 
 const meta = Astro.props;
+const { path, lang = 'en' } = Astro.props;
 ---
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang={lang}>
   <head>
+    
     <Themes />
     <MetaTags {...meta} />
+
   </head>
   <body>
 
@@ -23,7 +26,7 @@ const meta = Astro.props;
   </body>
 </html>
 
-<style lang="scss">
+<style lang='scss'>
   @import '~/styles/layout.scss';
 
 </style>

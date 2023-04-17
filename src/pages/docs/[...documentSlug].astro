@@ -1,0 +1,72 @@
+---
+import type { GetStaticPaths } from "astro"
+import { CollectionEntry,getCollection } from "astro:content"
+import BaseLayout from "~/layouts/BaseLayout.astro"
+import { Icon } from "~/partials/widgets/icons"
+
+
+export interface Props {
+  entry: CollectionEntry<"docs">
+}
+
+export const getStaticPaths = (async () => {
+  const entries = await getCollection("docs")
+
+  return entries.map(entry => ({
+    params: { documentSlug: entry.slug },
+    props: { entry },
+  }))
+}) satisfies GetStaticPaths
+
+const { entry } = Astro.props
+const { createdAt, lang, title, updatedAt, images, author } = entry.data
+
+const { Content } = await entry.render()
+
+const meta = {
+  title: 'Docs - Castro Maciel',
+  description: 'Here i&apos;ve wrote about me, it world and other interesting things..'
+}
+
+---
+
+<BaseLayout {...meta}>
+  <section>
+
+    {images && (
+      <div>
+        <img src={images.src} alt={images.alt} />
+        <small>{images.description}</small> 
+      </div>
+    )}
+
+    <Content />
+    
+    <a href='../' class="back-link">
+      <Icon type="back" client:load />
+      <span>go back</span>
+    </a>
+  </section>
+</BaseLayout>
+
+
+<style is:global>
+  @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+  
+  pre {
+    padding: 1rem 0rem 1rem 1rem;
+    border-radius: 8px;
+  }
+
+  code,
+  code span {
+    font: 0.9rem 'Roboto', sans-serif;
+  }
+
+  .back-link {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+</style>

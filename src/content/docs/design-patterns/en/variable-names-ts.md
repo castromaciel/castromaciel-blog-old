@@ -1,6 +1,5 @@
 ---
-layout:  ~/layouts/BlogPostLayout.astro
-url: /blogs/variable-names-ts/
+lang: en
 title: Variable names
 images: {
   src: /posts/computer.jpg,
@@ -8,8 +7,8 @@ images: {
   description: Computer with visual code open
 }
 author: Castro Maciel
-date: 8 April 2023
-category: [technical, typescript]
+createdAt: 8 April 2023
+updatedAt: 16 April 2023
 ---
 
 # Variable names

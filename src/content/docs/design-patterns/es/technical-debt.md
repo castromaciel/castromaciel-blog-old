@@ -1,24 +1,23 @@
 ---
-layout:  ~/layouts/BlogPostLayout.astro
-url: /blogs/technical-debt/
-title: What is technical debt?
+lang: en
+title: Qué es la deuda técnica?
 images: {
   src: /posts/road.jpeg,
-  alt: Road image to technical debt,
-  description: Photo taked at road to San Javier - Tucuman
+  alt: Camino a la deuda técnica,
+  description: "Foto tomada en Villa Nogués, en dirección a San Javier - Tucuman"
 }
 author: Castro Maciel
-date: 3 April 2023
-category: [technical]
+createdAt: 3 Abril 2023
+updatedAt: 16 Abril 2023
 ---
 
-<h1> Technical Debt </h1>
+<h1> Deuda Técnica </h1>
 
-<h2> What is technical debt? </h2>
+<h2> Qué es la deuda técnica? </h2>
 
-<p> Technical debt is <strong>the cost of additional rework</strong> caused by choosing the fastest solution instead of the most effective. </p>
+<p> La deuda técnica es <strong>el costo adicional de re-trabajo </strong> ocasionado por elegir la solución más rápida por sobre la más efectiva. </p>
 
-<p> <strong> It is the lack of quality in the code </strong> which generates a debt that will affect future costs. These costs are economic and time: <p>
+<p> <strong> Es la falta de calidad en el código, </strong> lo que genera una  <i> deuda </i> que repercutirá en los costes futuros. Estos costos son económicos y de tiempo: <p>
 
 <ul>
   <li> Carrying out maintenance </li>
