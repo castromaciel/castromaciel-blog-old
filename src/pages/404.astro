@@ -1,5 +1,5 @@
 ---
-import PagesLayout from "~/layouts/PagesLayout.astro";
+import BaseLayout from "~/layouts/BaseLayout.astro";
 
 const meta = { 
   title: 'Error 404 - Castro Maciel'
@@ -7,9 +7,9 @@ const meta = {
 ---
 
 
-<PagesLayout {...meta}>
+<BaseLayout {...meta}>
   <section>
     <h1>404 not found</h1>
     <a href="/">Go back home</a>
   </section>
-</PagesLayout>
+</BaseLayout>

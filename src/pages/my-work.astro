@@ -1,5 +1,5 @@
 ---
-import PagesLayout from "~/layouts/PagesLayout.astro";
+import BaseLayout from "~/layouts/BaseLayout.astro";
 import MyWork from "~/partials/MyWork.astro";
 
 const meta = { 
@@ -7,6 +7,6 @@ const meta = {
 }
 ---
 
-<PagesLayout {...meta}>
+<BaseLayout {...meta}>
   <MyWork />
-</PagesLayout>
+</BaseLayout>
