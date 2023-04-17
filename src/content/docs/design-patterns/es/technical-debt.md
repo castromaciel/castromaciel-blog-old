@@ -1,5 +1,5 @@
 ---
-lang: en
+lang: es
 title: Qué es la deuda técnica?
 images: {
   src: /posts/road.jpeg,

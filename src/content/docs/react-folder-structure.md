@@ -1,5 +1,5 @@
 ---
-lang: en
+lang: es
 title: Estructura de carpetas de react
 author: Castro Maciel
 createdAt: 17 April 2023
