@@ -118,3 +118,7 @@ project-folder
 <p>
   Las carpetas <code class="inline-code"> pages </code>, <code class="inline-code"> routes </code>, y <code class="inline-code"> services </code> son "opcionales". Ya que nuestro proyecto puede no tener páginas adicionales. Asi como también, puede ser una aplicación estática, que no consuma ninguna api.
 </p>
+
+<p>
+  A continuación se deja un ejemplo de un proyecto básico de react <a href="https://github.com/castromaciel/rc-fakestore/tree/main/src#readme" target="_blank"> react-folder-structure </a>
+</p>
