@@ -82,7 +82,7 @@ entries = entries.sort((a, b) => {
 })
 
 if (Astro.params.folderSlug !== undefined) {
-  entries = [...entries, { href: "../", name: "go back", type: "back" }]
+  entries = [{ href: "../", name: "go back", type: "back" },...entries]
 }
 ---
 
