@@ -1,0 +1,32 @@
+table {
+  display: table;
+  width: 100%;
+
+  @media all and (max-width: 1024px) {
+    display: table;
+  }
+
+  thead {
+    @media all and (max-width: 1024px) {
+      display: contents;
+    }
+    th {
+      border-bottom: 0.135rem solid #595959;
+    }
+  }
+
+  tr {
+    @media all and (max-width: 1024px) {
+      display: table-row;
+    }
+    td,
+    th {
+      @media all and (max-width: 1024px) {
+        display: table-cell;
+      }
+    }
+
+    
+  }
+
+}
