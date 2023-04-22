@@ -1,6 +1,6 @@
 ---
 lang: es
-title: Comandos básicos de github
+title: Comandos básicos de git
 images: {
   src: https://castromaciel-blog.netlify.app/docs/github-wallpaper.jpeg,
   alt: github wallpaper,
@@ -11,7 +11,9 @@ createdAt: 17 April 2023
 
 # Comandos básicos de git:
 
+Git es un software que facilita el control de versiones (SCV) que nos ayuda a gestionar nuestros archivos de proyecto. Es utilizado principalmente por desarrolladores para hacer un seguimiento de las modificaciones realizadas en el código fuente. Permite el trabajo colaborativo.
 
+Al ser una herramienta muy eficaz para estas tareas, hay muchos comandos que se utilizan con frecuencia. En este artículo veremos, algunos de los más utilizados que todo developer debería conocer.
 
 ## $ git clone
 Git clone es un comando para descargarte el código fuente existente desde un repositorio remoto (como Github, por ejemplo). En otras palabras, Git clone básicamente realiza una copia idéntica de la última versión de un proyecto en un repositorio y la guarda en tu pc.
@@ -48,6 +50,7 @@ O añadir todo de una vez:
 ````
 git add .
 ````
+
 ## $ git commit
 Una vez que se llega a cierto punto en el desarrollo, queremos guardar nuestros cambios (después de una tarea o asunto específico).  
 
@@ -57,6 +60,7 @@ También necesitamos escribir un mensaje corto para explicar qué hemos desarrol
 ````
 git commit -m "mensaje de confirmación"
 ````
+
 ## $ git push
 Después de haber confirmado tus cambios, el siguiente paso que quieres dar es enviar tus cambios al servidor remoto. Git push envía tus commits al repositorio remoto.
 
