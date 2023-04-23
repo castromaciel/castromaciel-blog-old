@@ -1,6 +1,6 @@
 import { defineCollection, z } from "astro:content"
 
-const blogCollection = defineCollection({
+const docsCollection = defineCollection({
   schema: z.object({
     title: z.string(),
     images: z.object({
@@ -9,11 +9,12 @@ const blogCollection = defineCollection({
       description: z.string().optional(),
     }).optional(),
     lang: z.enum(["en", "es"]).default("en"),
-    createdAt: z.date(),
-    updatedAt: z.date().optional(),
+    createdAt: z.string(),
+    updatedAt: z.string().optional(),
+    author: z.string(),
   }),
 })
 
 export const collections = {
-  blog: blogCollection,
+  docs: docsCollection,
 }
