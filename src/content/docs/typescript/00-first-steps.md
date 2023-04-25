@@ -79,7 +79,7 @@ npm install -g typescript
 
 <img src="/docs/typescript/add-function.png" alt="Funcón add" />
 
-<p> Podemos observar en nuestro IDE (en este caso VS Code), nos da un par de errores, durante el desarrollo de nuestra función. Estos errores sin del siguiente tipo </p>
+<p> Podemos observar en nuestro IDE (en este caso VS Code), nos da un par de errores durante el desarrollo de nuestra función. Estos errores sin del siguiente tipo </p>
 
 ```
 Parameter 'num1' implicitly has an 'any' type.ts(7006)
@@ -87,7 +87,7 @@ Parameter 'num1' implicitly has an 'any' type.ts(7006)
 (parameter) num1: any
 ```
 
-<p> TypeScripy nos está alertando, en primera instancia que especifiquemos que tipo de dato queremos que tenga nuestro parametro <code class="inline-code">num1</code>. Entonces, lo que haremos en este caso es especificar que tanto <code class="inline-code">num1</code> como <code class="inline-code">num2</code> son parámetros de tipo <code class="inline-code">number</code>. </p>
+<p> TypeScript nos está alertando, en primera instancia que especifiquemos que tipo de dato queremos que tenga nuestro parametro <code class="inline-code">num1</code>. Entonces, lo que haremos en este caso es especificar que tanto <code class="inline-code">num1</code> como <code class="inline-code">num2</code> son parámetros de tipo <code class="inline-code">number</code>. </p>
 
 <img src="/docs/typescript/add-function2.png" alt="Funcón add" />
 
