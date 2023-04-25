@@ -2,7 +2,7 @@
 lang: en
 title: Variable names
 images: {
-  src: https://castromaciel-blog.netlify.app/posts/computer.jpg,
+  src: https://castromaciel-blog.netlify.app/docs/design-patterns/computer.jpg,
   alt: Computer with visual code,
   description: Computer with visual code open
 }

@@ -22,7 +22,7 @@ Estos entornos son tales como:
 
 <p>TypeScript es un lenguaje de programación, pero también es una herramienta (o compilador), que se ejecuta sobre su código para compilar de TypeScript a Javascript. Como resultado final lo que se obtiene es JavaScript. </p>
 
-<img src="/docs/typescript/compiler-process.png" alt="Proceso de compilación de TypeScript" />
+<img src="https://castromaciel-blog.netlify.app/docs/typescript/compiler-process.png" alt="Proceso de compilación de TypeScript" />
 
 <p>Bueno, eso por supuesto trae una pregunta importante, ¿Cómo puede TypeScript añadir nuevas características
 si lo que se obtiene al final son archivos .js normales? Y la respuesta es que el compilador de TypeScript
@@ -77,7 +77,7 @@ npm install -g typescript
 
 <p> Ahora, creamos nuestro archivo con extensión .ts y probemos nuevamente nuestra función anterior </p>
 
-<img src="/docs/typescript/add-function.png" alt="Funcón add" />
+<img src="https://castromaciel-blog.netlify.app/docs/typescript/add-function.png" alt="Funcón add" />
 
 <p> Podemos observar en nuestro IDE (en este caso VS Code), nos da un par de errores durante el desarrollo de nuestra función. Estos errores sin del siguiente tipo </p>
 
@@ -89,10 +89,10 @@ Parameter 'num1' implicitly has an 'any' type.ts(7006)
 
 <p> TypeScript nos está alertando, en primera instancia que especifiquemos que tipo de dato queremos que tenga nuestro parametro <code class="inline-code">num1</code>. Entonces, lo que haremos en este caso es especificar que tanto <code class="inline-code">num1</code> como <code class="inline-code">num2</code> son parámetros de tipo <code class="inline-code">number</code>. </p>
 
-<img src="/docs/typescript/add-function2.png" alt="Funcón add" />
+<img src="https://castromaciel-blog.netlify.app/docs/typescript/add-function2.png" alt="Funcón add" />
 
 <p>Una vez especificados los tipos de datos de nuestros parametros, podemos observar que ahroa nos advierte que cuando <strong> invocamos nuestra funcion </strong>, estamos cometiendo un error. Este error es por que nuestra función está esperando 2 parametros de tipo <code class="inline-code">number</code>. Por lo que podemos corregirlo de dos formas. </p>
 
-<img src="/docs/typescript/add-function3.png" alt="Funcón add" />
+<img src="https://castromaciel-blog.netlify.app/docs/typescript/add-function3.png" alt="Funcón add" />
 
 <p> De esta manera podemos observar, que durante el desarrollo de nuestra app, pudimos alertar todos estos pequeños errores lógicos que muchas veces pasan desapercibidos. A gran escala, utilizar TypeScript es de mucha ayuda. </p>
