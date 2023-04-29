@@ -4,7 +4,6 @@ title: What is technical debt?
 images: {
   src: https://castromaciel-blog.netlify.app/docs/design-patterns/road.jpeg,
   alt: Road image to technical debt,
-  description: Photo taked at road to San Javier - Tucuman
 }
 author: Castro Maciel
 createdAt: 3 April 2023

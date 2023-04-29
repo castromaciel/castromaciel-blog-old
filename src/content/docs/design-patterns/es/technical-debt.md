@@ -2,9 +2,8 @@
 lang: es
 title: Qué es la deuda técnica?
 images: {
-  src: /posts/road.jpeg,
+  src: https://castromaciel-blog.netlify.app/docs/design-patterns/road.jpeg,
   alt: Camino a la deuda técnica,
-  description: "Foto tomada en Villa Nogués, en dirección a San Javier - Tucuman"
 }
 author: Castro Maciel
 createdAt: 3 Abril 2023
@@ -20,39 +19,39 @@ updatedAt: 16 Abril 2023
 <p> <strong> Es la falta de calidad en el código, </strong> lo que genera una  <i> deuda </i> que repercutirá en los costes futuros. Estos costos son económicos y de tiempo: <p>
 
 <ul>
-  <li> Carrying out maintenance </li>
-  <li> Refactor the code </li>
-  <li> Understand the code </li>
-  <li> Additional time on code transfer </li>
+  <li> Mantenimiento </li>
+  <li> Refactorizar el código </li>
+  <li> Entender el codigo </li>
+  <li> Tiempo adicional en transferir el código </li>
 </ul>
 
-<h2> Causes of Technical Debt </h2>
+<h2> Causas de la deuda técnica </h2>
 
 <ul>
   <li>
-    <h4> Business pressure </h4>
-    <p> Sometimes business circumstances call for speed over quality. So at that time, everyone wants to finish their homework above all else. </p>
+    <h4> Presión de la empresa </h4>
+    <p> Muchas veces, las circunstancias de la empresa apremian la velicodad antes que la calidad. Entonces, es cuando TODOS quieren finalizar su tarea por encima de cualquier cosa. </p>
   </li>
   <li>
-    <h4> Incompetence </h4>
-    <p> This is when developer just doesn't know how to write decent code. </p>
+    <h4> Incompetencia </h4>
+    <p> Puede sonar un poco duro, pero la realidad es que cuando el desarrollador simplemente no sabe como escribir código decente. </p>
   </li>
 </ul>
 
-<h3> Martin Fowler technical debt scheme </h3>
+<h3> Esquema de Martin Fowler sobre la deuda técnica </h3>
 
-<img src="/posts/technicaldebt-scheme.jpeg" alt="Technical debt scheme"/>
+<img src="https://castromaciel-blog.netlify.app/docs/design-patterns/technicaldebt-scheme.jpeg" alt="Esquema de la deuda técnica"/>
 
-<h2> How is technical debt paid? </h2>
+<h2> ¿Cómo se paga la deuda técnica? </h2>
 
-<p> Falling into technical debt is normal and often unavoidable. We must be aware and worry about paying the technical debt. Techical debt is paid with <strong><i> Refactiring </i></strong>. </p>
+<p> Caer en deuda técnica, es normal y a veces inevitable. We must be aware and worry about paying the technical debt. Techical debt is paid with <strong><i> Refactiring </i></strong>. </p>
 
-<h2> Refactoring </h2>
+<h2> Refactorización </h2>
 
-<p> It's the process that aims to improve the code without altering its behavior to make it more understandable and tolerant of changes. </p>
+<p> Es el proceso que tiene como objetivo mejorar el código sin alterar su comportamiento para hacerlo más comprensible y tolerante a los cambios. </p>
 
-<p> Usually, for a strong refactoring to have the expected objective, it is essential to have unit tests. </p>
+<p>Por lo general, para que una refactorización fuerte tenga el objetivo esperado, es fundamental contar con pruebas unitarias. </p>
 
-<p> If we don't implement unit tests, we'll fall into famous: <strong> "If it works, don't touch it" </strong>. </p>
+<p> Si no implementamos pruebas unitarias, caeremos en los famosos: <strong> "Si funciona, no lo toques" </strong>. </p>
 
-<p> Poor software quality always ends up being paid or assumed by someone. Whether it is the client, the provider with resources or the developer himself spending time refactoring or wasting time programming on a fragile system. </p>
+<p> La mala calidad del software siempre termina siendo pagada o asumida por alguien. Ya sea el cliente, el proveedor con recursos o el propio desarrollador dedicando tiempo a refactorizar o perdiendo tiempo programando en un sistema frágil. </p>
