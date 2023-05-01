@@ -4,7 +4,6 @@ title: Variable names
 images: {
   src: https://castromaciel-blog.netlify.app/docs/design-patterns/computer.jpg,
   alt: Computer with visual code,
-  description: Computer with visual code open
 }
 author: Castro Maciel
 createdAt: 8 April 2023
