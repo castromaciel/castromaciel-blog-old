@@ -1,33 +1,22 @@
+---
+import { HOME_ITEMS } from "~/constants";
+
+---
+
 <section>
   <nav>
     <center>
       <h1>Castro Maciel&apos;s Blog</h1>
       <h2>
-        <p>
-          <a href="/about-me/" title="about me">
-            👨🏻‍💻 about me
-          </a>
-        </p>
-        <p>
-          <a href="/my-work/" title="my work">
-            👷🏻 my work
-          </a>
-        </p>
-        <p>
-          <a href="/docs/" title="docs">
-            📓 docs
-          </a>
-        </p>
-        <p>
-          <a href="/contact/" title="contact">
-            📞 contact
-          </a>
-        </p>
-        <p>
-          <a href="/static/CastroMaciel_en_cv.pdf" target="_blank">
-            📃 my resume
-          </a>
-        </p>
+        {
+          HOME_ITEMS.map(({ href, target, title }) => (
+            <p>
+              <a href={href} title={title} target={target}>
+                {title}
+              </a>
+            </p>
+          ))
+        }
       </h2>
     </center>
   </nav>

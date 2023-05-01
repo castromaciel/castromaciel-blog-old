@@ -1,4 +1,4 @@
-export const navItems = [
+export const NAV_ITEMS = [
   {
     label: 'home',
     path: '/'
@@ -81,4 +81,36 @@ export const PROJECT_LINKS = [
     techs: ['react-ts', 'vite', 'bootstrap', 'scss', 'mapbox-gl'],
     linkDemo: 'https://castromaciel.github.io/maps-app/'
   }
+]
+
+export const HOME_ITEMS = [
+  {
+    title: '👨🏻‍💻 about me',
+    href: '/about-me/',
+    target: '',
+  },
+  {
+    title: '👷🏻 my work',
+    href: '/my-work/',
+    target: '',
+
+  },
+  {
+    title: '📓 docs',
+    href: '/docs/',
+    target: '',
+
+  },
+  {
+    title: '📞 contact',
+    href: '/contact/',
+    target: '',
+
+  },
+  {
+    title: '📃 my resume',
+    href: '/static/CastroMaciel_en_cv.pdf',
+    target: '_blank',
+
+  },
 ]
