@@ -21,7 +21,7 @@ export const NAV_ITEMS = [
   }
 ]
 
-export const SOCIAL_LINKS = [
+export const OTHER_LINKS = [
   {
     label: 'github',
     path: 'https://github.com/castromaciel'
@@ -29,6 +29,10 @@ export const SOCIAL_LINKS = [
   {
     label: 'linkedIn',
     path: 'https://www.linkedin.com/in/castromaciel-00/'
+  },
+  {
+    label: 'rss',
+    path: '/rss.xml'
   }
 ]
 

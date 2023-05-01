@@ -1,12 +1,12 @@
 ---
-import { SOCIAL_LINKS } from "~/constants";
+import { OTHER_LINKS } from "~/constants";
 ---
 <footer>
   <nav>
-    Social Links:
+    Iteresting links:
     <ul>
       {
-        SOCIAL_LINKS.map(({ label, path }) => (
+        OTHER_LINKS.map(({ label, path }) => (
           <li>
             <a href={path} target="_blank" rel="noreferrer">{label}</a>
           </li>
