@@ -1,6 +1,7 @@
 ---
 lang: es
 title: Qué es la deuda técnica?
+description:  La deuda técnica es el costo adicional de re-trabajo ocasionado por elegir la solución más rápida por sobre la más efectiva.
 images: {
   src: https://castromaciel-blog.netlify.app/docs/design-patterns/road.jpeg,
   alt: Camino a la deuda técnica,

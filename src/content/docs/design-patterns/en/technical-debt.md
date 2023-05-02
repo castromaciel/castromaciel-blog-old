@@ -1,6 +1,7 @@
 ---
 lang: en
 title: What is technical debt?
+description: Technical debt is the cost of additional rework caused by choosing the fastest solution instead of the most effective.
 images: {
   src: https://castromaciel-blog.netlify.app/docs/design-patterns/road.jpeg,
   alt: Road image to technical debt,

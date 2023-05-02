@@ -1,6 +1,7 @@
 ---
 lang: es
 title: Comandos básicos de git
+description: Git es un software que facilita el control de versiones (SCV) que nos ayuda a gestionar nuestros archivos de proyecto. Es utilizado principalmente por desarrolladores para hacer un seguimiento de las modificaciones realizadas en el código fuente. Permite el trabajo colaborativo.
 images: {
   src: https://castromaciel-blog.netlify.app/docs/github-wallpaper.jpeg,
   alt: github wallpaper,

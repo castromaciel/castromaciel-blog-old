@@ -1,6 +1,7 @@
 ---
 lang: es
 title: Estructura de carpetas de react
+description: Cuando empezamos a desarrollar un nuevo proyecto de React, una de las primeras preguntas que nos hacemos es ¿Cómo organizo mi proyecto de manera eficaz?
 author: Castro Maciel
 createdAt: 17 April 2023
 ---
