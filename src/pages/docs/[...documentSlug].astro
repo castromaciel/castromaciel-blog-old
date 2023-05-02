@@ -20,14 +20,14 @@ export const getStaticPaths = (async () => {
 }) satisfies GetStaticPaths
 
 const { entry } = Astro.props
-const { lang, title, images } = entry.data
+const { lang, title, images, description } = entry.data
 
 const { Content } = await entry.render()
 
 const meta = {
   lang,
   title: `${title} - Castro Maciel`,
-  description: 'Here i&apos;ve wrote about a bit of all. Like blog posts, design patterns, maths, notes of university, etc..',
+  description: description ?? '',
   ogImage: images?.src
 }
 ---
