@@ -6,8 +6,10 @@ import PostLink from '~/components/PostLink.astro';
 import BaseLayout from '~/layouts/BaseLayout.astro';
 
 const meta = {
-  title: 'Docs - Castro Maciel',
-  description: 'Here i&apos;ve wrote about me, it world and other interesting things..'
+  title: "Docs - Castro Maciel",
+  description: "Here i've wrote about me, it world and other interesting things..",
+  ogType: "blog",
+  noindex: true,
 }
 
 type FolderChild = { href: string; name: string; type: 'folder' | 'document' | 'back' }
