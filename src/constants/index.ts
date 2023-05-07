@@ -91,24 +91,24 @@ export const HOME_ITEMS = [
   {
     title: '👨🏻‍💻 about me',
     href: '/about-me/',
-    target: '',
+    target: '_self',
   },
   {
     title: '👷🏻 my work',
     href: '/my-work/',
-    target: '',
+    target: '_self',
 
   },
   {
     title: '📓 docs',
     href: '/docs/',
-    target: '',
+    target: '_self',
 
   },
   {
     title: '📞 contact',
     href: '/contact/',
-    target: '',
+    target: '_self',
 
   },
   {

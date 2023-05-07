@@ -8,7 +8,9 @@ import { OTHER_LINKS } from "~/constants";
       {
         OTHER_LINKS.map(({ label, path }) => (
           <li>
-            <a href={path} target="_blank" rel="noreferrer">{label}</a>
+            <a href={path} target="_blank" rel="noreferrer">
+              {label}
+            </a>
           </li>
         ))
       }
