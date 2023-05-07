@@ -9,7 +9,7 @@ const { pathname } = Astro.url;
   <ul>
     {
       NAV_ITEMS.map(({ label, path }) => (
-        <li id={label}>
+        <li>
           <a href={path} title={label}>
             {
               isActivePath(pathname, path)
