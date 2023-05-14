@@ -1,5 +1,5 @@
 import type { FC } from 'react'
-import { Back, DocumentIcon, Folder, SunIcon } from './icons'
+import { Back, DocumentIcon, Folder, RSSIcon, SunIcon } from './icons'
 
 interface Props {
   type: string
@@ -17,6 +17,9 @@ type = 'folder'
 
     case 'back':
       return <Back />
+    
+    case 'rss':
+      return <RSSIcon />
   
     default:
       return <SunIcon />
