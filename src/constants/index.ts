@@ -31,6 +31,10 @@ export const OTHER_LINKS = [
     path: 'https://www.linkedin.com/in/castromaciel-00/'
   },
   {
+    label: 'instagram',
+    path: 'https://www.instagram.com/castromaciellr/'
+  },
+  {
     label: 'rss',
     path: '/rss.xml'
   }
