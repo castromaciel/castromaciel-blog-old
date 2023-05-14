@@ -166,7 +166,7 @@ Badges used from [Ileriayo • markdown-badges](https://github.com/Ileriayo/mark
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[license-shield]: https://img.shields.io/github/license/castromaciel/readme-template
+[license-shield]: https://img.shields.io/github/license/castromaciel/readme-template?style=flat-square
 [license-url]: https://github.com/castromaciel/readme-template/blob/main/LICENSE
 [stars-shield]: https://img.shields.io/github/stars/castromaciel/readme-template
 [stars-url]: https://github.com/castromaciel/readme-template
