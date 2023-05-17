@@ -4,6 +4,7 @@ title: README template
 description: Have you ever thought about how to write a good readme? Here I leave you a template to get out of those troubles!
 author: Castro Maciel
 createdAt: 14 May 2023
+updatedAt: 17 May 2023
 ---
 
 <!-- PROJECT SHIELDS -->
@@ -77,13 +78,13 @@ Here we'll list things you need to use the software and how to install them.
 
 ### Make it your own
 To get a local copy, clone it using:
-```sh
+```bash
 git clone https://github.com/castromaciel/readme-template.git
 ```
 
 Or get it downloading
 
-```sh
+```bash
 rm -rf .git && git init
 git add .
 git commit -m "Initial commit"
@@ -91,7 +92,7 @@ git commit -m "Initial commit"
 
 ### Install dependencies:
 
-```sh
+```bash
 pnpm install
 #or
 yarn install
@@ -103,11 +104,11 @@ npm install
 
 In this project, you can run the following scripts:
 
-| Scripts       | Description                                         |
-| ------------- | --------------------------------------------------- |
-| npm build     | Builds the app for production to the `dist` folder.  |
-| npm dev       | Runs the app in the development mode.                |
-| npm test      | Runs tests.                                          |
+| Scripts        | Description                                          |
+| -------------- | ---------------------------------------------------- |
+| pnpm build     | Builds the app for production to the `dist` folder.  |
+| pnpm dev       | Runs the app in the development mode.                |
+| pnpm test      | Runs tests.                                          |
 
 ## Usage
 
@@ -126,31 +127,33 @@ Creating a repository from a template starts a new project quickly.
 
 ## Folder Structure
 
-```
-project-name
-├── node_modules
-├── public
-└── src
-    ├── __tests__
-        ├── App.test.tsx
-    ├── assets
-        ├── react.svg
-    ├── App.scss
-    ├── App.tsx
-    ├── index.scss
-    ├── main.tsx
-    └── vite-env.d.ts
-├── .env.development
-├── .eslintignore
-├── .eslintrc.json
-├── .gitignore
-├── index.html
-├── LICENSE
-├── package.json
-├── README.md
-├── tsconfig.json
-├── tsconfig.node.json
-├── vite.config.js
+```bash
+project-name/
+├── node_modules             # Third party libraries
+├── public                   # 
+└── src                      # Root directory
+|  ├── __tests__             # Test all functionalities
+|  ├── components            # Common components
+|  ├── helpers               # Common functions
+|  ├── hooks                 # 
+|  ├── pages                 # All pages of app
+|  ├── routes                # Routes configuration
+|  ├── services              # Requests to the server
+|  ├── App.tsx               # 
+|  ├── index.scss            # 
+|  ├── main.tsx              # 
+|  └── vite-env.d.ts         # 
+├── .env.development         # 
+├── .eslintignore            # 
+├── .eslintrc.json           # Styleguide configuration
+├── .gitignore               # Files ignored at publish into github
+├── index.html               # 
+├── LICENSE                  # License information
+├── package.json             # 
+├── README.md                # 
+├── tsconfig.json            # 
+├── tsconfig.node.json       # 
+├── vite.config.js           # 
 ```
 
 ## License
@@ -166,11 +169,13 @@ Badges used from [Ileriayo • markdown-badges](https://github.com/Ileriayo/mark
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[license-shield]: https://img.shields.io/github/license/castromaciel/readme-template?style=flat-square
+[license-shield]: https://img.shields.io/github/license/castromaciel/readme-template
 [license-url]: https://github.com/castromaciel/readme-template/blob/main/LICENSE
 [stars-shield]: https://img.shields.io/github/stars/castromaciel/readme-template
 [stars-url]: https://github.com/castromaciel/readme-template
+
 [nodejs-url]: https://nodejs.org/en
+
 [react]: https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB
 [react-url]: https://react.dev/
 [redux]: https://img.shields.io/badge/redux-%23593d88.svg?style=for-the-badge&logo=redux&logoColor=white
@@ -183,5 +188,6 @@ Badges used from [Ileriayo • markdown-badges](https://github.com/Ileriayo/mark
 [jest-url]: https://jestjs.io/
 [react-testing-library]: https://img.shields.io/badge/-TestingLibrary-%23E33332?style=for-the-badge&logo=testing-library&logoColor=white
 [react-testing-library-url]: https://testing-library.com/docs/react-testing-library/intro/
-[page-image]: /docs/readme-template.png
-[page-image-url]: /docs/readme-template.png
+
+[page-image]: https://raw.githubusercontent.com/castromaciel/readme-template/main/images/preview.png
+[page-image-url]: https://raw.githubusercontent.com/castromaciel/readme-template/main/images/preview.png
