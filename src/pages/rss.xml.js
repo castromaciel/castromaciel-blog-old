@@ -1,6 +1,6 @@
 import rss from '@astrojs/rss';
 import { SITE } from '~/config.mjs';
-import { fetchPosts } from '~/utils/posts';
+import { fetchPosts } from '~/utils';
 
 export async function get(context) {
   const docs = await fetchPosts()
