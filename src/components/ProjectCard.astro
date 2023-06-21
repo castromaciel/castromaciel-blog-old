@@ -22,6 +22,11 @@ const {
       {title}
     </a>
   </h3>
+  <h4>
+    <a href={repositoryUrl} target="_blank" title={`Open ${title} repository at new window`} class="custom-link">
+      <small> View repository </small> 
+    </a>
+  </h4>
   <p>{description}</p>
 
   <div class="tech-container">
@@ -31,9 +36,6 @@ const {
         <b class="marker"> • </b>
       </Fragment>
     ))}
-    <a href={repositoryUrl} target="_blank" title={`Open ${title} repository at new window`} class="custom-link">
-      <small> gh repository </small> 
-    </a>
   </div>
   <hr>
 </div>
