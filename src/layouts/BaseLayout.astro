@@ -1,5 +1,6 @@
 ---
 import Themes from 'astro-themes';
+import { ViewTransitions } from 'astro:transitions';
 import MetaTags from '~/core/MetaTags.astro';
 import Scripts from '~/core/Scripts.astro';
 import Navbar from '~/partials/widgets/Navbar.astro';
@@ -15,10 +16,9 @@ const { pathname } = Astro.url
 <!DOCTYPE html>
 <html lang={lang}>
   <head>
-    
     <Themes />
     <MetaTags {...meta} />
-
+    <ViewTransitions />
   </head>
   <body>
     { pathname !== '/' && <Navbar /> }
