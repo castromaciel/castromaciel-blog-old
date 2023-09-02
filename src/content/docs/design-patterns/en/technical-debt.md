@@ -3,7 +3,7 @@ lang: en
 title: What is technical debt?
 description: Technical debt is the cost of additional rework caused by choosing the fastest solution instead of the most effective.
 images: {
-  src: https://castromaciel-blog.netlify.app/docs/design-patterns/road.jpeg,
+  src: https://castromaciel-blog.vercel.app/docs/design-patterns/road.jpeg,
   alt: Road image to technical debt,
 }
 author: Castro Maciel
@@ -41,7 +41,7 @@ updatedAt: 16 April 2023
 
 <h3> Martin Fowler technical debt scheme </h3>
 
-<img src="https://castromaciel-blog.netlify.app/docs/design-patterns/technicaldebt-scheme.jpeg" alt="Technical debt scheme"/>
+<img src="https://castromaciel-blog.vercel.app/docs/design-patterns/technicaldebt-scheme.jpeg" alt="Technical debt scheme"/>
 
 <h2> How is technical debt paid? </h2>
 
