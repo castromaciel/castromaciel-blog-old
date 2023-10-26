@@ -117,7 +117,7 @@ export const HOME_ITEMS = [
   },
   {
     title: '📃 my resume',
-    href: '/static/CastroMaciel_en_cv.pdf',
+    href: '/static/castro_maciel_cv.pdf',
     target: '_blank',
 
   },
