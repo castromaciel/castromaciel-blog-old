@@ -1,4 +1,4 @@
-import { CollectionEntry, getCollection } from 'astro:content'
+import { getCollection, type CollectionEntry } from 'astro:content'
 
 const normalizePost = async (post: CollectionEntry<"docs">) => {
 	const { id, data, slug } = post

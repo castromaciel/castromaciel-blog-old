@@ -5,6 +5,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { SITE } from './src/config.mjs';
 
+
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 export default defineConfig({
@@ -26,5 +27,6 @@ export default defineConfig({
   },
   integrations: [
     sitemap(),
-    react()]
+    react(),
+  ]
 });
