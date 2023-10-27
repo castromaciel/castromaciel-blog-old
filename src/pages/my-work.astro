@@ -1,6 +1,7 @@
 ---
+import ProjectCard from "~/components/ProjectCard.astro";
+import { PROJECT_LINKS } from "~/constants";
 import BaseLayout from "~/layouts/BaseLayout.astro";
-import Mywork from "~/partials/MyWork.astro";
 
 const meta = { 
   title: 'My work - Castro Maciel'
@@ -8,5 +9,16 @@ const meta = {
 ---
 
 <BaseLayout {...meta}>
-  <Mywork />
+    
+  <section>
+    <h1>My work</h1>
+    <h2>Projects</h2>
+    <p>Open the url to see the projects:</p>
+    {
+      PROJECT_LINKS.map((project) => (
+        <ProjectCard {...project} />
+      ))
+    }
+  </section>
+
 </BaseLayout>

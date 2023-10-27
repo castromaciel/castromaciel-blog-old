@@ -1,7 +1,6 @@
 ---
 import { SITE } from "~/config.mjs";
 import BaseLayout from "~/layouts/BaseLayout.astro";
-import About from "~/partials/About.astro";
 
 const meta = { 
   title: 'About me - Castro Maciel',
@@ -10,5 +9,33 @@ const meta = {
 ---
 
 <BaseLayout {...meta}>
-  <About />
+  <section>
+    <h1>About me</h1>
+    <p>Hi there 👋🏼 I&apos;m Maciel.</p>
+    <ul>
+      <li>
+        I&apos;m
+        <strong> Fullstack Developer</strong>
+        , 
+        <strong> Engineering Informatic </strong>
+        student and
+        <strong> passionate </strong>
+        about new technologies.
+      </li>
+      <li>
+        I&apos;m currently working at 
+        <a href="https://www.iuvity.com/en" target="_blank" rel="noreferrer"> iuvity </a>
+        as 
+        <strong> Frontend Developr</strong>
+        .
+      </li>
+      <li>
+        My hobbies are playing piano and playing padel 🎾.
+      </li>
+    </ul>
+    <img src="/images/me.JPG" alt="Maciel castro picture" />
+    <blockquote>
+      <em>Nothing and no one is perfect. Everything has its good side and its bad side.</em>
+    </blockquote>
+  </section>
 </BaseLayout>
