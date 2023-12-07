@@ -1,4 +1,7 @@
-# [castromaciel-blog.com](https://castromaciel-blog.vercel.app)
+## Old blog version.
+
+### Review new blog url
+### [castromaciel-blog.com](https://castromaciel-blog.vercel.app)
 
 [![Vercel Status][vercel-status-shield]][vercel-status-url]
 [![licence][license-shield]][license-url]
@@ -18,5 +21,5 @@
 [license-url]: https://github.com/castromaciel/castromaciel-blog/blob/main/LICENSE
 
 
-[astro-shield]: https://img.shields.io/github/package-json/dependency-version/castromaciel/castromaciel-blog/dev/astro/main
+[astro-shield]: https://img.shields.io/github/package-json/dependency-version/castromaciel/castromaciel-blog-old/dev/astro/main
 [astro-url]: https://astro.build/
